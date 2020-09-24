@@ -1,0 +1,9 @@
+*.pyc
+*.egg-info/
+/*venv/
+/dist/
+.idea/
+.vscode/
+/password.txt
+
+*~
