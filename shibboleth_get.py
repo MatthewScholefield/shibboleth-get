@@ -25,7 +25,7 @@ usage = Usage('''
 ''')
 
 
-def shibboleth_get(url, username, password, driver=None, debug=True):
+def shibboleth_get(username, password, url, driver=None, debug=True):
     """Returns a selenium webdriver with the authenticated page"""
     if driver is None:
         if debug:
@@ -36,7 +36,7 @@ def shibboleth_get(url, username, password, driver=None, debug=True):
         driver = webdriver.Chrome(options=chrome_options)
     try:
         if debug:
-            print('Fetching page...', file=sys.stderr)
+            print('Fetching page...', url, file=sys.stderr)
         driver.get(url)
         try:
             wait = WebDriverWait(driver, 2)
