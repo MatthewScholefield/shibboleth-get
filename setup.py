@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='shibboleth-get',
-    version='0.1.0',
+    version='0.1.1',
     description='Get the content of pages shielded by Shibboleth',
     url='https://github.com/MatthewScholefield/shibboleth-get',
     author='Matthew D. Scholefield',
